@@ -1,0 +1,5 @@
+<view class='weather-wrapper'>
+  <view class="temp">12du</view>
+  <view class='weather'>晴天</view>
+</view>
+
