@@ -1,5 +1,23 @@
 <view class='weather-wrapper'>
-  <view class="temp">12du</view>
-  <view class='weather'>晴天</view>
+  <view class="temp">{{ temp }}du</view>
+  <view class='weather'>{{ weather }}</view>
+    <image class="wea-pg" src="/images/{{ src }}-bg.png" mode="scaleToFill"></image>  
 </view>
+
+<view class="title">
+  <image class="time-icon" src='/images/time-icon.png'></image>
+  <view class="text">天气预测</view>
+</view>
+
+<scroll-view scroll-x>
+  <view class='list'>
+    <view class="items" wx:for="{{ list }}">
+       <view class='time'>{{ item.time }}</view>
+         <image class="wea-icon" src="/images/{{ weather }}-icon.png"></image>  
+       <view class="temprature">{{item.temp}}</view>   
+    </view>
+    
+  </view>
+</scroll-view>
+
 
